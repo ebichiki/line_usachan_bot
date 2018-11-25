@@ -18,7 +18,8 @@ Pythonでクリーニング料金を検索してうさちゃんが答えてく�
 
 ## Usage
 LINEアプリへのQRコード
-<img src="https://qr-official.line.me/M/eqsGGprk_6.png" width="300">
+
+https://qr-official.line.me/M/eqsGGprk_6.png
 
 ## Licence
 MIT
