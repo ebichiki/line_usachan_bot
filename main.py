@@ -49,9 +49,10 @@ def handle_message(event):
 
     # 記事取得関数を呼び出し
     result = sc.getWord(word)
+
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text=event.message.text))
+        TextSendMessage(text=result))
 
 if __name__=="__main__":
     port = int(os.getenv("PORT", 5000))
