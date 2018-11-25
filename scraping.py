@@ -13,7 +13,7 @@ def getWord(word):
     # 解析したHTMLから任意の部分のみを抽出
     links = soup.find_all("tr")
 
-    # 該当記事カウント変数と結果格納リスト
+    # 該当アイテムのカウント変数と結果格納リスト
     count = 0
     result = ""
     list = []
@@ -31,4 +31,5 @@ def getWord(word):
     else:
         result = 'アイテムが見つからなかったぴょん'
 
+    # リストに改行を挿入して返却
     return result
