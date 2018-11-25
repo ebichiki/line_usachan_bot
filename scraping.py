@@ -32,4 +32,4 @@ def getWord(word):
     else:
         result = 'アイテムが見つからなかったぴょん'
 
-return result
+    return result
