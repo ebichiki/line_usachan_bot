@@ -1,10 +1,9 @@
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
 
-html = urlopen("http://www.usachan.co.jp/usachan/price/r/")
-
 def getWord(word):
 
+    html = urlopen("http://www.usachan.co.jp/usachan/price/r/")
     data = html.read()
     html = data.decode('utf-8')
 
