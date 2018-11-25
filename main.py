@@ -13,6 +13,7 @@ from linebot.models import (
 )
 
 import os
+import scraping as sc
 
 app = Flask(__name__)
 
@@ -42,6 +43,12 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
+
+    # ユーザからの検索ワードを取得
+    word = event.message.text
+
+    # 記事取得関数を呼び出し
+    result = sc.getWord(word)
     line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text=event.message.text))
