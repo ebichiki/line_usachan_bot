@@ -3,6 +3,8 @@ line-usachan-bot
 
 # Description
 Pythonでクリーニング料金を検索してうさちゃんが答えてくれるLine bot
+
+## Description
 - Python (Flask) にて開発。
 - クリーニングしたいアイテムをメッセージで送ると料金を返す。
 
@@ -14,12 +16,12 @@ Flask
 line-bot-sdk
 beautifulsoup4
 
-# Usage
+## Usage
 LINEアプリへのQRコード
 https://qr-official.line.me/M/eqsGGprk_6.png
 
-# Licence
+## Licence
 MIT
 
-# Author
+## Author
 [ebichiki](https://github.com/ebichiki)
